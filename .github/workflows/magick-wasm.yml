@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build magick-wasm
-      run: cd magick-wasm/build && sh emscripten-scripts/run-docker.sh
+      run: cd magick-wasm/build/emscripten-scripts && sh run-docker.sh
