@@ -1,0 +1,14 @@
+name: Build magick-wasm
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build magick-wasm
+      run: cd magick-wasm/build && sh emscripten-scripts/run-docker.sh
